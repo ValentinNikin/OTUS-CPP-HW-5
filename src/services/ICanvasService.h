@@ -2,7 +2,7 @@
 
 #include "types/Observable.h"
 #include "types/Canvas.h"
-#include "types/ShapeParams.h"
+#include "types/Shape.h"
 
 /**
  * Описание интерфейса для сервис управления рисованием на канвасе
@@ -16,9 +16,9 @@ public:
 
     /**
      * Добавить объект на канвас
-     * @param params конфигурация добавляемого объекта
+     * @param obj ссылка на добавляемый объект
      */
-    virtual void addObject(const std::shared_ptr<ShapeParams>& params) = 0;
+    virtual void addObject(const std::shared_ptr<Shape>& obj) = 0;
 
     /**
      * Удалить объект с канваса

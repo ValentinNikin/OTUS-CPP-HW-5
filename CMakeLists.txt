@@ -34,7 +34,6 @@ add_library(
         ${PROJECT_SOURCE_DIR}/src/types/Document.cpp
         ${PROJECT_SOURCE_DIR}/src/types/Shape.h
         ${PROJECT_SOURCE_DIR}/src/types/Shape.cpp
-        ${PROJECT_SOURCE_DIR}/src/types/ShapeParams.h
         ${PROJECT_SOURCE_DIR}/src/types/Point.h
         ${PROJECT_SOURCE_DIR}/src/types/Observable.h
         ${PROJECT_SOURCE_DIR}/src/types/Observable.cpp

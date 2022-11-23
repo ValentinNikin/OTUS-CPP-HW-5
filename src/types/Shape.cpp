@@ -10,6 +10,10 @@ std::string Shape::getId() const {
     return _id;
 }
 
+void Shape::setId(const std::string& id) {
+    _id = id;
+}
+
 uint16_t Shape::getRotation() const {
     return _rotation;
 }

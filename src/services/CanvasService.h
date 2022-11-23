@@ -2,7 +2,7 @@
 
 #include "./IDocumentsService.h"
 #include "./ICanvasService.h"
-#include "../types/ShapeParams.h"
+#include "../types/Shape.h"
 
 /**
  * Сервис управления рисованием на канвасе
@@ -12,7 +12,7 @@ public:
     CanvasService(const std::shared_ptr<IDocumentsService>& documentsService);
 
     std::vector<std::shared_ptr<Shape>> getDrawedObjects() override;
-    void addObject(const std::shared_ptr<ShapeParams>& params) override;
+    void addObject(const std::shared_ptr<Shape>& obj) override;
     void removeObject(const std::string& objectId) override;
     uint32_t getWidth() const override;
     uint32_t getHeight() const override;

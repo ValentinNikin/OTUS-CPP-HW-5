@@ -10,29 +10,11 @@ std::vector<std::shared_ptr<Shape>> CanvasService::getDrawedObjects() {
     return _canvas->getDrawedObjects();
 }
 
-void CanvasService::addObject(const std::shared_ptr<ShapeParams>& params) {
+void CanvasService::addObject(const std::shared_ptr<Shape>& obj) {
     std::cout << "CanvasService. Added new object to the canvas" << std::endl;
-    if (std::dynamic_pointer_cast<RectangleParams>(params) != nullptr) {
-        auto rectangleParams = std::dynamic_pointer_cast<RectangleParams>(params);
-        auto rectangle = std::make_shared<Rectangle>(
-                "SomeId",
-                0,
-                rectangleParams->position,
-                rectangleParams->width,
-                rectangleParams->height
-                );
-        _canvas->addObject(rectangle);
-    }
-    else if (std::dynamic_pointer_cast<CircleParams>(params) != nullptr) {
-        auto circleParams = std::dynamic_pointer_cast<CircleParams>(params);
-        auto circle = std::make_shared<Circle>(
-                "SomeId",
-                0,
-                circleParams->position,
-                circleParams->radius
-        );
-        _canvas->addObject(circle);
-    }
+
+    obj->setId("SomeNewId");
+    _canvas->addObject(obj);
     notifyUpdate();
 }
 

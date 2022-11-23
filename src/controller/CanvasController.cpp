@@ -4,8 +4,8 @@ CanvasController::CanvasController(
         const std::shared_ptr<ICanvasService>& canvasService)
         : _canvasService(canvasService) {}
 
-void CanvasController::addObject(const std::shared_ptr<ShapeParams>& params) {
-    _canvasService->addObject(params);
+void CanvasController::addObject(const std::shared_ptr<Shape>& obj) {
+    _canvasService->addObject(obj);
 }
 
 void CanvasController::removeObject(const std::string& objectId) {

@@ -23,11 +23,8 @@ int main (int, char **) {
     documentsController->createDocument();
     documentsController->saveAsDocument("someId", "/path/to/document.txt");
 
-    auto rectangleParams = std::make_shared<RectangleParams>();
-    rectangleParams->position = Point{0, 10};
-    rectangleParams->width = 100;
-    rectangleParams->height = 50;
-    canvasController->addObject(rectangleParams);
+    auto rectangle = std::make_shared<Rectangle>("", 0, Point{0, 10}, 100, 50);
+    canvasController->addObject(rectangle);
     canvasController->removeObject("SomeId");
 
     return 0;

@@ -10,6 +10,7 @@
 class Shape {
 public:
     std::string getId() const;
+    void setId(const std::string& id);
     uint16_t getRotation() const;
     void setRotation(uint16_t rotation);
     Point getAnchorPoint() const;
