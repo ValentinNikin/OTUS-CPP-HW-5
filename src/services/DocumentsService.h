@@ -2,6 +2,9 @@
 
 #include "./IDocumentsService.h"
 
+/**
+ * Сервис управления документами
+ */
 class DocumentsService : public IDocumentsService {
     std::vector<std::shared_ptr<Document>> getOpenedDocuments() override;
     std::shared_ptr<Document> getActiveDocument() override;

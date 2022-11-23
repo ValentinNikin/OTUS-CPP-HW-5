@@ -5,6 +5,9 @@
 
 #include "./Canvas.h"
 
+/**
+ * Документ. Хранит информацию об открытом документе.
+ */
 class Document {
 public:
 
@@ -29,6 +32,9 @@ private:
     std::shared_ptr<IReadOnlyCanvas> _canvas;
 };
 
+/**
+ * Builder-класс для создания экземпляров класса Document.
+ */
 class DocumentBuilder {
 public:
     DocumentBuilder() = default;

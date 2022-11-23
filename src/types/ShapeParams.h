@@ -4,6 +4,10 @@
 
 #include "./Point.h"
 
+/**
+ * Промежуточный класс для передачи информации о создаваемом объекте из
+ * View в Model
+ */
 struct ShapeParams {
     virtual ~ShapeParams() = default;
 };

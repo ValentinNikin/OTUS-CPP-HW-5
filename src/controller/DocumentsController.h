@@ -6,6 +6,9 @@
 #include "../services/IDocumentsService.h"
 #include "../view/DocumentsView.h"
 
+/**
+ * Контроллер. Связывает DocumentView и DocumentService
+ */
 class DocumentsController {
 public:
     DocumentsController(const std::shared_ptr<IDocumentsService>& documentsService);

@@ -16,7 +16,6 @@ void CanvasService::addObject(const std::shared_ptr<ShapeParams>& params) {
         auto rectangleParams = std::dynamic_pointer_cast<RectangleParams>(params);
         auto rectangle = std::make_shared<Rectangle>(
                 "SomeId",
-                "OwnerId",
                 0,
                 rectangleParams->position,
                 rectangleParams->width,
@@ -28,7 +27,6 @@ void CanvasService::addObject(const std::shared_ptr<ShapeParams>& params) {
         auto circleParams = std::dynamic_pointer_cast<CircleParams>(params);
         auto circle = std::make_shared<Circle>(
                 "SomeId",
-                "OwnerId",
                 0,
                 circleParams->position,
                 circleParams->radius

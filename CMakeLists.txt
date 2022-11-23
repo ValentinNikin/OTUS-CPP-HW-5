@@ -38,7 +38,6 @@ add_library(
         ${PROJECT_SOURCE_DIR}/src/types/Point.h
         ${PROJECT_SOURCE_DIR}/src/types/Observable.h
         ${PROJECT_SOURCE_DIR}/src/types/Observable.cpp
-        ${PROJECT_SOURCE_DIR}/src/types/IObserver.h
 
         ${PROJECT_SOURCE_DIR}/src/view/CanvasView.h
         ${PROJECT_SOURCE_DIR}/src/view/CanvasView.cpp

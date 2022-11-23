@@ -3,8 +3,11 @@
 #include <memory>
 
 #include "../services/ICanvasService.h"
-#include "../types/IObserver.h"
+#include "../types/Observable.h"
 
+/**
+ * Класс View для канваса
+ */
 class CanvasView: public IObserver {
 public:
     CanvasView(const std::shared_ptr<ICanvasService>& canvasService);

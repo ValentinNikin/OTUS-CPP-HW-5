@@ -1,11 +1,13 @@
 #pragma once
 
 #include <memory>
-
 #include "../services/ICanvasService.h"
 #include "../view/CanvasView.h"
 #include "../types/ShapeParams.h"
 
+/**
+ * Контроллер. Связывает CanvasView и CanvasService
+ */
 class CanvasController {
 public:
     CanvasController(const std::shared_ptr<ICanvasService>& canvasService);

@@ -4,6 +4,9 @@
 #include "./ICanvasService.h"
 #include "../types/ShapeParams.h"
 
+/**
+ * Сервис управления рисованием на канвасе
+ */
 class CanvasService : public ICanvasService {
 public:
     CanvasService(const std::shared_ptr<IDocumentsService>& documentsService);

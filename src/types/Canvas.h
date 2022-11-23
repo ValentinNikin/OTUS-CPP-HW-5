@@ -5,6 +5,9 @@
 
 #include "./Shape.h"
 
+/**
+ * Read-only интерфейс канваса, для доступа к нему напрямую из документа
+ */
 class IReadOnlyCanvas {
 public:
     virtual std::vector<std::shared_ptr<Shape>> getDrawedObjects() = 0;
@@ -13,6 +16,10 @@ public:
     virtual ~IReadOnlyCanvas() = default;
 };
 
+/**
+ * Канвас.
+ * Содержит информацию об объектах нарисованных на канвасе
+ */
 class Canvas : public IReadOnlyCanvas {
 public:
     std::vector<std::shared_ptr<Shape>> getDrawedObjects() override;

@@ -2,18 +2,12 @@
 
 Shape::Shape(
         const std::string& id,
-        const std::string& ownerId,
         uint32_t zIndex)
     : _id(id),
-    _ownerId(ownerId),
     _zIndex(zIndex) {}
 
 std::string Shape::getId() const {
     return _id;
-}
-
-std::string Shape::getOwnerId() const {
-    return _ownerId;
 }
 
 uint16_t Shape::getRotation() const {
@@ -41,12 +35,11 @@ void Shape::setZIndex(uint32_t zIndex) {
 }
 
 Rectangle::Rectangle(const std::string& id,
-          const std::string& ownerId,
           uint32_t zIndex,
           Point position,
           uint32_t width,
           uint32_t height)
-          : Shape(id, ownerId, zIndex),
+          : Shape(id, zIndex),
           _position(position),
           _width(width),
           _height(height) {}
@@ -64,11 +57,10 @@ uint32_t Rectangle::getHeight() const {
 }
 
 Circle::Circle(const std::string& id,
-       const std::string& ownerId,
        uint32_t zIndex,
        Point position,
        uint32_t radius)
-   : Shape(id, ownerId, zIndex),
+   : Shape(id, zIndex),
      _position(position),
      _radius(radius) {}
 
