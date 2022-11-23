@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classIObserver.html" title=" " coords="10,55,89,80"/>
+<area shape="rect" id="node2" href="$classCanvasView.html" title=" " coords="162,5,257,31"/>
+<area shape="rect" id="node3" href="$classDocumentsView.html" title=" " coords="151,55,268,80"/>
+<area shape="rect" id="node4" href="$classICanvasService.html" title=" " coords="152,104,267,129"/>
+<area shape="rect" id="node5" href="$classCanvasService.html" title=" " coords="336,104,447,129"/>
+<area shape="rect" id="node6" href="$classObservable.html" title=" " coords="5,128,93,153"/>
+<area shape="rect" id="node7" href="$classIDocumentsService.html" title=" " coords="141,153,277,179"/>
+<area shape="rect" id="node8" href="$classDocumentsService.html" title=" " coords="325,153,457,179"/>
+</map>
